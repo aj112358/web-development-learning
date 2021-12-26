@@ -1,11 +1,27 @@
+/* TAG SELECTORS */
 
 body {
-    background-color: rgb(22, 172, 192);
+  background-color: rgba(65, 126, 134, 0.267);
 }
 
 hr {
-    border-style: dotted none none;
-    border-color: white;
-    border-width: 5px;
-    width: 10%;
+  width: 10%;
+  border-style: dotted none none;
+  border-color: white;
+  border-width: 5px;
 }
+
+h1,
+h3 {
+  color: #66bfbf;
+}
+
+h3:hover {
+    color: black;
+}
+
+/* CLASS SELECTORS */
+
+
+
+/* ID SELECTORS */
