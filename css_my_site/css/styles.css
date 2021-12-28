@@ -3,10 +3,17 @@
 
 body {
     margin: 0px;
+    text-align: center;
+    font-family: verdana, sans-serif;
 }
 
 h1 {
-    margin: 0px;
+    margin-top: 0;
+    position: relative;
+}
+
+p {
+    position: relative;
 }
 
 div {
@@ -20,6 +27,10 @@ div {
     width: 200px;
 }
 
+.top-container {
+    position: relative;
+    padding-top: 100px;
+}
 
 .middle-container {
     background-color: red;
@@ -27,4 +38,16 @@ div {
 
 .bottom-container {
     background-color: yellow;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 50px;
+    right: 300px;
 }
