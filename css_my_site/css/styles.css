@@ -21,6 +21,7 @@ h2 {
     font-size: 2.5rem;
     color: #66BFBF;
     font-weight: normal;
+    padding-bottom: 10px;
 }
 
 h3 {
@@ -30,18 +31,28 @@ h3 {
 
 p {
     position: relative;
+    line-height: 2;
 }
 
 a {
     color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAF6F6
 }
 
 hr {
-    margin: 50px auto;
+    margin: 100px auto;
     width: 10%;
-    border-style: dotted none none;
+    border: 15px dotted rgb(94, 141, 212);
+    /* border-style: dotted none none;
     border-color: rgb(94, 141, 212);
-    border-width: 15px;
+    border-width: 15px; */
+    border-bottom: none;
 }
 
 
@@ -54,11 +65,15 @@ hr {
 }
 
 .bottom-container {
-    padding-top: 100px;
+    padding: 50px 0px 20px;
     background-color: #66bfbf;
     margin-top: 50px;
     /* position: absolute; */
     width: 100%;
+}
+
+.middle-container {
+    margin: 100px 0px;
 }
 
 .bottom-cloud {
@@ -76,9 +91,7 @@ hr {
 .skill-row {
     width: 50%;
     margin: 100px auto;
-    text-align: left;
-    line-height: 2;
-    
+    text-align: left;    
 }
 
 .python {
@@ -99,27 +112,23 @@ hr {
     width: 75%
 }
 
-.profile p {
+.intro {
     color: #40514E;
+    width: 30%;
+    margin: auto;
 }
 
-.contact-me p {
-    
+.contact-message {
+    width: 40%;
     margin: 40px auto;
 }
 
-
-.footer-link {
-    margin-top: 1px;
-}
-
-.bottom-container p {
-    color: #EAF6F6;
-}
-
-.copywrite {
+.copyright {
     /* margin: 20px auto; */
     margin-bottom: 20px;
+    padding: 20px 0px;
+    color: #EAF6F6;
+    font-size: 0.75rem;
 }
 
 
@@ -133,7 +142,7 @@ hr {
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     border-radius: 8px;
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-size: 20px;
     padding: 10px 20px;
