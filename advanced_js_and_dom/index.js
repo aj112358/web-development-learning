@@ -1,6 +1,7 @@
 function handleClick() {
     var imageLetter = this.textContent;
     playSound(imageLetter);
+    playAnimation(imageLetter);
 }
 
 var buttons = document.querySelectorAll(".drum");
@@ -10,6 +11,7 @@ for (var i = 0; i < buttons.length; i++) {
 
 document.addEventListener("keypress", function(event) {
     playSound(event.key);
+    playAnimation(event.key);
 });
 
 function playSound(letter) {
@@ -52,4 +54,15 @@ function playSound(letter) {
         default:
             console.log(letter);
     }
+}
+
+function playAnimation(letter) {
+    var activeButton = document.querySelector("." + letter);
+    activeButton.classList.add("pressed");
+
+    setTimeout(function() {
+        activeButton.classList.remove("pressed");
+    }, 100);
+
+    
 }
