@@ -1,6 +1,9 @@
 function handleClick() {
     var audio = new Audio("sounds/tom-1.mp3");
-    audio.play();   
+    audio.play();
+    console.log(this);
+    // this.setAttribute("style", "color: white;");
+    this.style.color = "white";
 }
 
 
