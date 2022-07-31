@@ -4,15 +4,14 @@ var userClickedPattern = [];
 var gamePattern = [];
 var buttonColors = ["red", "blue", "green", "yellow"];
 
-
 function nextSequence() {
-    var randomNumber = Math.floor(Math.random()*4);
+    var randomNumber = Math.floor(Math.random() * 4);
     var randomChosenColor = buttonColors[randomNumber];
     gamePattern.push(randomChosenColor);
 
-
     $("#" + randomChosenColor).fadeOut().fadeIn();
     playSound(randomChosenColor);
+    
     level++;
     $("#level-title").text("Level " + level);
     level = 0;
@@ -29,7 +28,7 @@ $(".btn").click(function(event) {
     animatePress(userChosenColor);
     checkAnswer(level);
 
-    if (gameStarted === true && gamePattern.length === userClickedPattern.length) {
+    if (gameStarted === true && gamePattern.length === level) {
         userClickedPattern = [];
         setTimeout(nextSequence, 1000);
     }
